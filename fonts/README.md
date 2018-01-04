@@ -1,0 +1,1 @@
+Exctract the `.otf` files (`use-on-desktop` directory inside the downloaded zip) into this directory.

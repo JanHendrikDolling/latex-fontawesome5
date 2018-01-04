@@ -1,0 +1,1 @@
+Download FontAwesome from [here](https://fontawesome.com/ and exctact the zip file into this directory.
