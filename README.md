@@ -33,6 +33,10 @@ Normal: \faicon{address-book}
 Bold: \textbf{\faicon{address-book}}
 ```
 
+```bash
+$ xelatex example-free.tex
+```
+
 Pro version
 ```tex
 \usepackage[pro]{fontawesome5}
@@ -41,6 +45,10 @@ Pro version
 Normal: \faicon{alarm-clock}
 Bold: \textbf{\faicon{alarm-clock}}
 Italic: \textit{\faicon{alarm-clock}}
+```
+
+```bash
+$ xelatex example-pro.tex
 ```
 
 Make Latest fontawesome.sty
