@@ -14,14 +14,9 @@ OUTPUT_HEADER = r'''
 % Configure a directory location for fonts(default: 'fonts/')
 \newcommand*{\fontdir}[1][fonts/]{\def\@fontdir{#1}}
 \fontdir
-% Define shortcut to load the Font Awesome font.
-\newfontfamily\FA[
-    Path=\@fontdir,
-    UprightFont=*-Regular-400,
-    BoldFont=*-Solid-900,
-]{Font Awesome 5 Free}
 % Define pro option
 \DeclareOption{pro}{
+  % Define shortcut to load the Font Awesome pro font.
   \newfontfamily\FA[
     Path=\@fontdir,
     UprightFont=*-Regular-400,
@@ -32,6 +27,14 @@ OUTPUT_HEADER = r'''
 \ProcessOptions\relax
 % Define shortcut to load the Font Awesome font for brands.
 \newfontfamily{\FAbrands}[Path=\@fontdir]{Font Awesome 5 Brands-Regular-400}
+% Define shortcut to load the Font Awesome font.
+\@ifundefined{FA}{%
+\newfontfamily\FA[
+  Path=\@fontdir,
+  UprightFont=*-Regular-400,
+  BoldFont=*-Solid-900,
+]{Font Awesome 5 Free}
+}{}
 % Generic command displaying an icon by its name.
 \newcommand*{\faicon}[1]{{
   \csname faicon@#1\endcsname

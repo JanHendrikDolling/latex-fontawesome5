@@ -1,5 +1,6 @@
 
 fonts/*.otf
+fontawesome/**
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
